@@ -181,7 +181,7 @@
 {
     [self initHeight];
     self.head.frame = CGRectMake(0, 0, screenW, [self getHeadHeight]);
-    self.talbleView.frame = CGRectMake(0, CGRectGetMaxY(self.head.frame), screenW, self.bounds.size.height - 45 - self.cancelTopMargin - self.head.bounds.size.height );
+    self.talbleView.frame = CGRectMake(0, CGRectGetMaxY(self.head.frame) - 1, screenW, self.bounds.size.height - 45 - self.cancelTopMargin - self.head.bounds.size.height );
     self.cancelBtn.frame = CGRectMake(0, self.bounds.size.height - 45 , screenW, 45);
     
     self.head.text = self.headStr;
